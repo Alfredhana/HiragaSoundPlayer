@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<meta charset='utf-8'>
+		<title>Hiraga Sound Player</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/DPlayer.min.css">
+	
+	</head>
+	
+	<body>
+		<div class="panel" style="display:block;">
+			<div class="panel-header">
+				<div class="panel-title"></div>
+			</div>
+			<div id="LyricsList" class="panel-body" >
+				<label>Original Text:</label>
+				<div id="LyricsList">
+					<textarea id="oritext" type="text"  onkeypress="ResizeTextBox()" style="width:80%;border-radius: .2em;font-size: 1em;" rows="8">日本語を勉強しますので、教えでください 私は本当に日本語がどれだけ上手かを見たいです!いつができますか？楽しみにしています！</textarea>
+					<button id="convertBtn" class="submitBtn" onclick="convert()">convert</button>
+					
+				</div>
+				<ul>
+				</ul>
+			</div>
+		</div>
+		
+    <div id="romajiOption" class="option" style="display:none">
+        <label> Romaji System </label>
+        <div class="select">
+            <select id="romajiSystem" name="romajiSystem" tabindex="3">
+                <option value="nippon" selected="">Nippon</option>
+                <option value="passport">Passport</option>
+                <option value="hepburn">Hepburn</option>
+            </select>
+        </div>
+    </div>    
+    <br />
+		
+		<script src="js/convert.js"></script>
+	</body>
+</html>

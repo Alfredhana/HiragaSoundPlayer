@@ -1,0 +1,66 @@
+body{
+	background:#fle7e7;    
+	font-size: 16px;
+}
+.top{
+	display: block;
+	margin:0 auto;
+}
+.top-cont{
+	display: inline-block;
+}
+.text-area
+{
+}
+
+.panel-header{
+	width: 568px;
+}
+
+#LyricsList{
+	display: block;
+    padding: 10px;
+    width: 558px;
+}
+
+.panel-body{
+	padding:10px;
+	width:558px;
+	display:block;
+	margin: 0 auto;
+}
+ul{
+    list-style-type: none;
+	margin: 0 0 0 0;
+    padding: 0;
+    line-height: 0%;
+}
+
+li{
+	margin:10px 0;
+	display: list-item;
+	line-height: normal;
+}
+
+.Lyrics{
+	font-size: 1.4em;
+    letter-spacing: 1px;
+    color: #444;
+}
+
+
+.line{
+	border-top: 1px dotted #cccccc;
+    height: 1px;
+    overflow: hidden;
+    margin: 0 0 5px 0;
+    width: auto;
+}
+
+#dplayer{
+	width:960;
+	height: 620;
+	max-width: 960;
+	max-height:620;
+	margin:0 auto;
+}
