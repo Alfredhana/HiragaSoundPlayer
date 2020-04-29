@@ -16,11 +16,23 @@
 				<div class="panel-title"></div>
 			</div>
 			<div id="LyricsList" class="panel-body" >
+				<div class="top">
+					<div class="top-cont">
+						<p>URL:</p>
+					</div>
+					<div class="top-cont">
+						<input  id="url-box">
+						</input>
+					</div>
+					<div class="top-cont" id="play" >
+						<img src="image/play-button.png" />
+					</div>
+				</div>
 				<label>Original Text:</label>
 				<div id="LyricsList">
-					<textarea id="oritext" type="text"  onkeypress="ResizeTextBox()" style="width:80%;border-radius: .2em;font-size: 1em;" rows="8">日本語を勉強しますので、教えでください 私は本当に日本語がどれだけ上手かを見たいです!いつができますか？楽しみにしています！</textarea>
+					<textarea id="oritext" type="text" style="width:80%;border-radius: .2em;font-size: 1em;" rows="8">私わバガてすね あなたにずど愛してる どうしようもなく この恋から抜け出せないくらいだ</textarea>
 					<button id="convertBtn" class="submitBtn" onclick="convert()">convert</button>
-					
+					<button id="clearBtn" class="submitBtn" onclick="clear()">clear</button>
 				</div>
 				<ul>
 				</ul>
@@ -38,7 +50,17 @@
         </div>
     </div>    
     <br />
+    
+    
 		
-		<script src="js/convert.js"></script>
+		<div id="dplayer"></div>
+		<div class="button">
+			
+		</div>
+		
+			
 	</body>
+	
+	<script src="js/DPlayer.min.js"></script>
+	<script src="js/text_handler.js"></script>
 </html>
